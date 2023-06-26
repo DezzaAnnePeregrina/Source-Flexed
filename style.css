@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: rgb(241, 252, 255);
+}
+/* header */
+header span{
+    color: rgb(23, 23, 68);
+    font-size: 30px;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    
+    gap: 40px;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(23, 23, 68);
+}
+    
+/* button */
+nav ul + ul li, main form a{
+    border: 2px solid rgb(23, 23, 68);
+    background-color: rgb(23, 23, 68);
+    height: 25px;
+    width: 70px;
+    text-align: center;
+    color: white;
+}
+
+nav ul + ul li a, main form a{
+    color: white;
+}
+/* button */
+/* header */
+
+/* main */
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10%;
+    color: rgb(23, 23, 68);
+}
+
+main h2{
+    font-size: 50px;
+}
+
+.one{
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input{
+    height: 25px;
+}
+
+.device{
+    width: 50%;
+}
+.device img{
+    width: 100%;
+}
+/* main */
+
+/* four divs */
+.features{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    color: rgb(23, 23, 68);
+}
+/* four divs */
+
+/* footer */
+footer{
+    color: rgb(23, 23, 68);
+    width: 40%;
+}
+
+footer h1{
+    font-size: 50px;
+}
+/* footer */
+
+@media screen and (max-width: 2000px) {
+    header nav{
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+/* header */
+    header{
+        border-bottom: 1px solid rgb(23, 23, 68);
+    }
+    header nav ul{
+        display: none;    
+    }
+/* header */
+
+/* main features, footer*/ 
+    main, form, .features{
+        flex-direction: column;
+    }
+
+    form{
+        gap: 10px;
+    }
+    input {
+        width: 100%;
+    }
+
+    main form a{
+        width: 100%;
+    }
+
+    form, .one, .device, footer{
+        width: 100%;
+    }
+/* main features and footer*/
+
+
+}
+
